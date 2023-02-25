@@ -1,7 +1,11 @@
 :root {
     --darkblue: #415167;
+    --lightgray: #EDF0F5;
+    --darkgray: #151D28;
 }
-
+body{
+    background-color: #F9FBFF;
+}
 .header{
     height: 768px;
     display: flex;
@@ -40,11 +44,11 @@
 .personalized::before{
     content: "";
     position: absolute;
-    top: 70px;
-    right: -20px;
+    top: 67.5px;
+    right: -15px;
     background-color: #C7A17A;
-    width: 490px;
-    height: 65.5px;
+    width: 485px;
+    height: 70px;
     z-index: -1;
 }
 .header-left-logo{
@@ -69,10 +73,173 @@
     left: calc(50% - 51px);
     cursor: pointer;
 }
-
 .header-menu {
+    position: relative;
     min-width: 274px;
     width: calc(((100vw - 690px)/5)*2);
     height: 100%;
     background-color: var(--darkblue);
+}
+.header-menu-cart{
+    position: absolute;
+    left: 56px;
+    top: 74px;
+    cursor: pointer;
+}
+.header-menu-list{
+    position: absolute;
+    left: 56px;
+    top: 220px;
+    color: var(--lightgray);
+    font-family: 'Nunito', sans-serif;
+}
+.header-menu-list-title{
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 22px;
+}
+.header-menu-list-ul{
+    list-style: none;
+    padding: 0;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 24px;
+}
+.header-menu-list-ul li{
+    margin-top: 24px;
+    cursor: pointer;
+}
+.header-menu-list-ul li:hover{
+    -webkit-text-stroke: .2px #EDF0F5;
+}
+.build_base{
+    margin-top: 90px;
+    margin-right: auto;
+    margin-left: auto;
+    max-width: 1100px;
+}
+.build_base-titles{}
+.build_base-titles-subtitle{
+    width: fit-content;
+    margin-right: auto;
+    margin-left: auto;
+    font-family: 'Nunito', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 24px;
+    color: var(--darkblue);
+}
+.build_base-titles-maintitle{
+    width: fit-content;
+    margin-right: auto;
+    margin-left: auto;
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 30px;
+    line-height: 34px;
+    color: var(--darkblue);
+}
+.build_base-icons{
+    font-family: 'Nunito', sans-serif;
+    margin-top: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.build_base-icons-item{
+    width: 226px;
+    height: 226px;
+}
+.build_base-icons-item-icon{
+    width: fit-content;
+    margin-top: 17px;
+    margin-right: auto;
+    margin-left: auto;
+}
+.build_base-icons-item-title{
+    text-align: center;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 28px;
+    color: #232C38;
+}
+.build_base-icons-item-description{
+    text-align: center;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 22px;
+    color: var(--darkgray);
+}
+.choose_favorite{
+    margin-top: 128px;
+    height: 894px;
+    position: relative;
+}
+.choose_favorite-bg{
+    position: absolute;
+    height: 100%;
+    width: calc(((100vw - 384px)/10)*3);
+    top: 0;
+    left: 0;
+    background-color: var(--darkblue);
+}
+.wrapper{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+.choose_favorite-titles{
+    margin-top: 90px;
+}
+.choose_favorite-titles-subtitle{
+    width: fit-content;
+    margin-right: auto;
+    margin-left: auto;
+    font-family: 'Nunito', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 24px;
+    color: var(--darkblue);
+}
+.choose_favorite-titles-maintitle{
+    width: fit-content;
+    margin-right: auto;
+    margin-left: auto;
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 30px;
+    line-height: 34px;
+    color: var(--darkblue);
+}
+.choose_favorite-slider{
+
+}
+.choose_favorite-slider-item{
+}
+
+
+
+
+
+.footer{
+    height: 60px;
+    background-color: var(--lightgray);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Nunito', sans-serif;
+    font-style: italic;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 22px;
+    color: var(--darkblue);
 }
